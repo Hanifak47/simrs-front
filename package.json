@@ -5,9 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "npm run type-check && npm run vite-build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "type-check": "tsc -b",
+    "vite-build": "vite build"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
